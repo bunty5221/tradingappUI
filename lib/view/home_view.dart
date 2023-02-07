@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../constant/colors.dart';
+import '../widget/line_chart.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -141,6 +142,7 @@ class _HomeViewState extends State<HomeView> {
             ),
             Container(
               height: size.height * 0.4,
+              child: LineChartExample(),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
